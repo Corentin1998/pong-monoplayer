@@ -1,6 +1,6 @@
 body{ /**éléments de bases (couleur, typographie, etc)**/
-    background-color: #000;
-    color: #fff;
+    background-color: white;
+    color: pink;
     font-family: monospace;
     display: flex;
     min-height: 100vh;
@@ -12,9 +12,9 @@ body{ /**éléments de bases (couleur, typographie, etc)**/
 
 #terrain{ /**caractéristiques du terrain : position, bordure (ligne "imaginaire" qui ne fait pas encore rebondir la balle) et dimensions **/
     position: relative;
-    border: 1px solid #000; /**rendre tous les contours noirs, sauf celui du haut et du bas qui sont blancs**/
-    border-top-color: #fff;
-    border-bottom-color: #fff;
+    border: 1px solid white; /**rendre tous les contours noirs, sauf celui du haut et du bas qui sont blancs**/
+    border-top-color: pink;
+    border-bottom-color: pink;
     width:800px;
     height:400px
 }
@@ -40,7 +40,7 @@ body{ /**éléments de bases (couleur, typographie, etc)**/
     left:50%;
     width: 20px;
     height: 20px;
-    background-color:#fff;
+    background-color: pink;
     border-radius: 10px;
 }
 
@@ -50,7 +50,7 @@ body{ /**éléments de bases (couleur, typographie, etc)**/
     top: calc(50% - var(--hauteur) / 2);
     width: 10px;
     height: 100px;
-    background-color:#fff;
+    background-color: pink;
 }
 
 #gauche{
@@ -61,18 +61,10 @@ body{ /**éléments de bases (couleur, typographie, etc)**/
     right: 10%;
 }
 
-.score{
+#score{
     position:absolute;
-    font-size:50px;
-    top:45%;
-}
-
-#scoreGauche{
-    left:40%;
-}
-
-#scoreDroite{
-    right:40%;
+    font-size:30px;
+    top:20%;
 }
 
 .ecranDebut{
@@ -98,10 +90,10 @@ body{ /**éléments de bases (couleur, typographie, etc)**/
 .btn{
     text-decoration: none;
     padding: 10px;
-    font-family: arial;
+    font-family: arial bold;
     font-size: 1em;
-    color: #5f497a;
-    background-color: #fac08f;
+    color: white;
+    background-color: pink;
     border-radius: 24px;
     display:inline-block;
     cursor:pointer;

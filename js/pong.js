@@ -25,15 +25,11 @@ window.addEventListener("keydown", function (event) {
     }
     if (event.key === "a") {
         raquetteGauche.monter();
+        raquetteDroite.descendre();
     }
     if (event.key === "q") {
         raquetteGauche.descendre();
-    }
-    if (event.key === "p") {
         raquetteDroite.monter();
-    }
-    if (event.key === "m") {
-        raquetteDroite.descendre();
     }
     event.preventDefault();
 }, true);
@@ -45,8 +41,6 @@ window.addEventListener("keyup", function (event) {
     }
     if (event.key === "a" || event.key === "q") {
         raquetteGauche.arret();
-    }
-    if (event.key === "p" || event.key === "m") {
         raquetteDroite.arret();
     }
     event.preventDefault();
