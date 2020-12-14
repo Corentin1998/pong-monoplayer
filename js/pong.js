@@ -23,11 +23,11 @@ window.addEventListener("keydown", function (event) {
     if (event.defaultPrevented) {
         return
     }
-    if (event.key === "a") {
+    if (event.key === "h") {
         raquetteGauche.monter();
         raquetteDroite.descendre();
     }
-    if (event.key === "q") {
+    if (event.key === "b") {
         raquetteGauche.descendre();
         raquetteDroite.monter();
     }
@@ -39,7 +39,7 @@ window.addEventListener("keyup", function (event) {
     if (event.defaultPrevented) {
         return
     }
-    if (event.key === "a" || event.key === "q") {
+    if (event.key === "h" || event.key === "b") {
         raquetteGauche.arret();
         raquetteDroite.arret();
     }

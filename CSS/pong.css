@@ -110,7 +110,7 @@ body{ /**éléments de bases (couleur, typographie, etc)**/
     padding: 10px;
     font-size: 1em;
     color: #5f497a;
-    background-color: #fac08f;
+    background-color: rgb(254, 164, 253);
     border-radius: 24px;
     display:inline-block;
     cursor:pointer;
