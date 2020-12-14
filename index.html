@@ -1,0 +1,35 @@
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="CSS/pong.css">
+        <title>PONG</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!---importe la bibliothèque-->
+    </head>
+    <body>
+        <div id="ecran-debut" class="ecranDebut">
+            Joueur 1 <br><br>
+            utilisez les touches <br><br>
+            <span class="touche">A</span>
+            et
+            <span class="touche">Q</span>
+            Joueur 2 <br><br>
+            utilisez les touches <br><br>
+            <span class="touche">P</span>
+            et
+            <span class="touche">M</span><br>
+            <a id="btn-jouer" href = "#" class= "btn" >jouer</a>
+        </div>
+
+        <div id="terrain"> <!-- id renvoie à des éléments uniques, ici terrain et balle dans le css-->
+            <div id="balle"></div>
+            <div id="gauche" class="raquette"></div>
+            <div id="droite" class="raquette"></div>
+            <div id="scoreGauche" class="score">0</div>
+            <div id="scoreDroite" class="score">0</div>
+
+        </div>
+        <script src="js/Balle.js"></script>
+        <script src="js/Terrain.js"></script>
+        <script src="js/Raquette.js"></script>
+        <script src="js/pong.js"></script>  <!-- ="se référer à" -->
+    </body>
+</html>
